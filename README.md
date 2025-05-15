@@ -1,14 +1,14 @@
 # Super Trunfo de Cidades - Desafio em Linguagem C
 
 
-### 🎓 Projeto Acadêmico – Curso de Análise e Desenvolvimento de Sistemas  
+## 🎓 Projeto Acadêmico – Curso de Análise e Desenvolvimento de Sistemas  
 **Faculdade:** Estácio  
 **Disciplina:** Introdução à Programação de Computadores  
 **Professor:** Sérgio Cardoso  
 **Autor:** Walclériston Ramos Américo
 
 
-## 📌 Descrição do Projeto
+### 📌 Descrição do Projeto
 
 Este projeto é um desafio proposto na disciplina de Introdução à Programação de Computadore com o objetivo de aplicar os conceitos de entrada, armazenamento e exibição de dados na linguagem C.
 
@@ -25,14 +25,14 @@ O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma r
 Após o cadastro, os dados são exibidos de forma organizada na tela.
 
 
-## 🛠️ Tecnologias Utilizadas
+### 🛠️ Tecnologias Utilizadas
 
 - Linguagem C
 - Compilador GCC
 - Terminal / Prompt de comando
 
 
-## 🚀 Como Executar o Projeto
+### 🚀 Como Executar o Projeto
 
 1. Clone este repositório:
 - git clone https://github.com/wallramosdev/SuperTrunfo.git
@@ -46,7 +46,7 @@ Após o cadastro, os dados são exibidos de forma organizada na tela.
 4. Execute o programa: 
 - ./super_trunfo
 
-## 📷 Exemplo de Execução
+### 📷 Exemplo de Execução
 
 SUPER TRUNFO - CIDADES
 
@@ -163,7 +163,7 @@ Número de Pontos Turísticos: 263
 
 
 
-## 📚 Aprendizados
+### 📚 Aprendizados
 Este projeto permitiu reforçar os seguintes conceitos:
 
 - Leitura e escrita com scanf e printf
@@ -173,6 +173,6 @@ Este projeto permitiu reforçar os seguintes conceitos:
 - Boas práticas de codificação e documentação
 
 
-## 📄 Licença
+### 📄 Licença
 Este projeto é de uso acadêmico e não possui licença comercial.
 
