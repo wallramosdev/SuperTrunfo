@@ -21,8 +21,10 @@ O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma r
 - Área (em km²)
 - PIB (em milhões de reais)
 - Número de Pontos Turísticos
+- **Densidade Populacional (habitantes por km²)**
+- **PIB per Capita (reais por habitante)**
 
-Após o cadastro, os dados são exibidos de forma organizada na tela.
+Após o cadastro, os dados são exibidos de forma organizada na tela, incluindo os cálculos adicionais de densidade populacional e PIB per capita.
 
 
 ### 🛠️ Tecnologias Utilizadas
@@ -58,13 +60,29 @@ Cadastro da Carta 1:
 Escolha um Estado digitando uma letra conforme a lista:
 
 A - Acre
+
+
 B - Bahia
+
+
 C - Ceará
+
+
 D - Distrito Federal
+
+
 E - Espírito Santo
+
+
 F - Goiás
+
+
 G - Minas Gerais
+
+
 H - Santa Catarina
+
+
 
 Estado (A a H): G
 
@@ -143,6 +161,10 @@ PIB: 0.81 bilhões de reais
 
 Número de Pontos Turísticos: 15
 
+Densidade Populacional: 0.02 hab/km²
+
+PIB per Capita: 23080.34 reais
+
 
 CARTA 2
 
@@ -160,6 +182,10 @@ PIB: 23.68 bilhões de reais
 
 Número de Pontos Turísticos: 263
 
+Densidade Populacional: 0.80 hab/km²
+
+PIB per Capita: 44087.97 reais
+
 
 
 
@@ -168,6 +194,7 @@ Este projeto permitiu reforçar os seguintes conceitos:
 
 - Leitura e escrita com scanf e printf
 - Manipulação de char, int, float e strings
+- Cálculo de densidade populacional e PIB per capita
 - Organização de dados com variáveis separadas
 - Formatação de saída
 - Boas práticas de codificação e documentação
