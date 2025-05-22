@@ -8,19 +8,20 @@
 **Professor:** Sérgio Cardoso  
 **Autor:** Walclériston Ramos Américo
 
+---
 
 ### 📌 Descrição do Projeto
 
-Este projeto é um desafio proposto na disciplina de Introdução à Programação de Computadore com o objetivo de aplicar os conceitos de entrada, armazenamento e exibição de dados na linguagem C.
+Este projeto é um desafio proposto na disciplina de Introdução à Programação de Computadores, com o objetivo de praticar conceitos da linguagem C, como entrada de dados, manipulação de variáveis, cálculos, exibição de resultados e uso de estruturas condicionais (`if` e `if-else`).
 
 O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma representando uma cidade brasileira com os seguintes atributos:
 
-- Estado (letra de A a H)
+- Estado (letra de A a H, convertido para sigla ex.: MG, SC)
 - Código da Carta (ex: A01)
 - Nome da Cidade
-- População
+- População (armazenada como `unsigned long int`)
 - Área (em km²)
-- PIB (em milhões de reais)
+- PIB (em bilhões de reais)
 - Número de Pontos Turísticos
 - **Densidade Populacional (habitantes por km²)**
 - **PIB per Capita (reais por habitante)**
@@ -32,11 +33,20 @@ O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma r
   - PIB per Capita  
   - Inverso da Densidade Populacional (quanto menor a densidade, maior o poder)
 
-Após o cadastro, o programa exibe os dados organizados de cada carta e realiza uma **comparação atributo por atributo**, indicando qual carta venceu em cada um. A comparação segue estas regras:
+---
 
-- Para todos os atributos numéricos (exceto densidade populacional), **vence o maior valor**
-- Para a densidade populacional, **vence o menor valor**
-- O resultado da comparação é exibido com `1` para verdadeiro (Carta 1 venceu) e `0` para falso (Carta 2 venceu)
+### 🔥 Funcionalidades
+
+- Cadastro de duas cartas com informações completas
+- Cálculo automático de:
+  - Densidade Populacional
+  - PIB per Capita
+  - Super Poder
+- **Comparação das cartas de duas formas:**
+  - **Sem if/else:** usando operadores lógicos para comparar atributo por atributo, retornando 1 (verdadeiro, carta 1 venceu) ou 0 (falso, carta 2 venceu).
+  - **Com if/else:** comparação manual de um atributo específico (ex.: População) exibindo qual carta venceu ou se houve empate, com uma mensagem descritiva.
+
+---
 
 ### 🛠️ Tecnologias Utilizadas
 
@@ -69,6 +79,8 @@ gcc super_trunfo.c -o super_trunfo
 ```sh
 ./super_trunfo
 ```
+
+---
 
 ### 📷 Exemplo de Execução
 
@@ -165,6 +177,7 @@ PIB per Capita: 44087.97 reais
 Super Poder: 23685801984.00
 
 ====== Comparação das Cartas ======
+=========== Sem IF/ELSE ===========
 População: Carta 1 venceu (0) / Carta 2 venceu (1)
 Área: Carta 1 venceu (1) / Carta 2 venceu (0)
 PIB: Carta 1 venceu (0) / Carta 2 venceu (1)
@@ -173,7 +186,16 @@ Densidade Populacional: Carta 1 venceu (0) / Carta 2 venceu (1)
 PIB per Capita: Carta 1 venceu (0) / Carta 2 venceu (1)
 Super Poder: Carta 1 venceu (0) / Carta 2 venceu (1)
 ===================================
+
+====== Comparação das Cartas ======
+=========== Com IF/ELSE ===========
+======= Atributo: População =======
+Carta 1 - Nanuque (MG): 35038
+Carta 2 - Florianópolis (SC): 537211
+Resultado: Carta 2 (Florianópolis) venceu!
 ```
+
+---
 
 ### 📚 Aprendizados
 
@@ -183,9 +205,14 @@ Este projeto permitiu reforçar os seguintes conceitos:
 - Conversão de tipos numéricos para cálculos mistos
 - Uso de unsigned long int para valores grandes
 - Cálculo de densidade populacional e PIB per capita
-- Estruturação lógica sem o uso de estruturas de controle (if, else)
-- Comparação de múltiplos atributos com lógica booleana
+- Cálculo de Super Poder com soma de atributos diversos
+- Comparação de múltiplos atributos:
+  - Sem uso de estruturas condicionais
+  - Com uso de if e if-else
+- Manipulação de strings com ponteiros (const char*) para representar estados
 - Boas práticas de formatação e organização de código em C
+
+---
 
 ### 📄 Licença
 

@@ -14,6 +14,7 @@
 int main() {
     // Variáveis da Carta 1
     char estado1;
+    const char* nomeEstado1;
     char codigo1[5];
     char cidade1[50];
     unsigned long int populacao1;
@@ -26,6 +27,7 @@ int main() {
 
     // Variáveis da Carta 2
     char estado2;
+    const char* nomeEstado2;
     char codigo2[10];
     char cidade2[50];
     unsigned long int populacao2;
@@ -89,7 +91,7 @@ int main() {
     printf("Carta 1 cadastrada com sucesso!\n");
     printf("================================================\n\n");
 
-    // --- Leitura da Carta 2 ---
+    // Leitura da Carta 2
     printf("Cadastro da Carta 2:\n\n");
     printf("Escolha um Estado digitando uma letra conforme a lista:\n");
     printf("A - Acre\nB - Bahia\nC - Ceará\nD - Distrito Federal\n");
@@ -140,11 +142,13 @@ int main() {
     resultadoPibPerCapita2 = pibPerCapita1 < pibPerCapita2;
     resultadoSuperPoder2 = superPoder1 < superPoder2;
 
+    // 
+
     printf("\n================================================\n");
     printf("Carta 2 cadastrada com sucesso!\n");
     printf("================================================\n\n");
 
-    // --- Exibição da Carta 1 ---
+    // Exibição da Carta 1
     printf("============= CARTA 1 =============\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -174,8 +178,9 @@ int main() {
     printf("Super Poder: : %.2f\n", superPoder2);
     printf("===================================\n\n");
     
-    // Comparação de Cartas
+    // Comparação de Cartas Sem IF/ELSE
     printf("====== Comparação das Cartas ======\n");
+    printf("=========== Sem IF/ELSE ===========\n");
     printf("População: Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoPopulacao1, resultadoPopulacao2);
     printf("Área: Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoArea1, resultadoArea2);
     printf("PIB:  Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoPib1, resultadoPib2);
@@ -183,6 +188,77 @@ int main() {
     printf("Densidade Populacional:  Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoDensidadePopulacional1, resultadoDensidadePopulacional2);
     printf("PIB per Capita:  Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoPibPerCapita1, resultadoPibPerCapita2);
     printf("Super Poder:  Carta 1 venceu (%d) / Carta 2 venceu (%d)\n", resultadoSuperPoder1, resultadoSuperPoder2);
-    printf("===================================\n");
+    printf("===================================\n\n");
+
+    // A - Acre
+    // B - Bahia
+    // C - Ceará
+    // D - Distrito Federal
+    // E - Espírito Santo
+    // F - Goiás
+    // G - Minas Gerais
+    // H - Santa Catarina
+
+    // Normalização de estado carta 1
+    if(estado1 == 'A')
+        nomeEstado1 = "AC";
+    else if(estado1 == 'B')
+        nomeEstado1 = "BA";
+    else if(estado1 == 'C')
+        nomeEstado1 = "CE";
+    else if(estado1 == 'D')
+        nomeEstado1 = "DF";
+    else if(estado1 == 'E')
+        nomeEstado1 = "ES";
+    else if(estado1 == 'F')
+        nomeEstado1 = "GO";
+    else if(estado1 == 'G')
+        nomeEstado1 = "MG";
+    else if(estado1 == 'H')
+        nomeEstado1 = "SC";
+    else {
+        nomeEstado1 = estado1;
+        printf("Carta 1 - Estado inválido!\n\n");
+    }
+
+    // Normalização de estado carta 2
+    if(estado2 == 'A')
+        nomeEstado2 = "AC";
+    else if(estado2 == 'B')
+        nomeEstado2 = "BA";
+    else if(estado2 == 'C')
+        nomeEstado2 = "CE";
+    else if(estado2 == 'D')
+        nomeEstado2 = "DF";
+    else if(estado2 == 'E')
+        nomeEstado2 = "ES";
+    else if(estado2 == 'F')
+        nomeEstado2 = "GO";
+    else if(estado2 == 'G')
+        nomeEstado2 = "MG";
+    else if(estado2 == 'H')
+        nomeEstado2 = "SC";
+    else {
+        nomeEstado2 = estado2;
+        printf("Carta 2 - Estado inválido!\n\n");
+    }
+
+    // Comparação de Cartas com IF/ELSE
+    printf("====== Comparação das Cartas ======\n");
+    printf("=========== Com IF/ELSE ===========\n");
+    printf("======= Atributo: População =======\n");
+    printf("Carta 1 - %s (%s): %.2u \n", cidade1, nomeEstado1, populacao1);
+    printf("Carta 2 - %s (%s): %.2u \n", cidade2, nomeEstado2, populacao2);
+
+    // Condição para determinar vencedor
+    if(populacao1 > populacao2) 
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+    else {
+        if(populacao1 == populacao2) {
+            printf("Empate: Carta 1 e 2 tem o mesmo número de habitantes!\n");
+        }
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+    }
+
     return 0;
 }
