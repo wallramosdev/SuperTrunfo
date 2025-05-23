@@ -12,7 +12,15 @@
 
 ### 📌 Descrição do Projeto
 
-Este projeto é um desafio proposto na disciplina de Introdução à Programação de Computadores, com o objetivo de praticar conceitos da linguagem C, como entrada de dados, manipulação de variáveis, cálculos, exibição de resultados e uso de estruturas condicionais (`if` e `if-else`).
+Este projeto é um desafio proposto na disciplina de Introdução à Programação de Computadores, com o objetivo de praticar conceitos da linguagem C, como:
+- Entrada de dados
+- Manipulação de variáveis
+- Cálculos matemáticos
+- Estruturas condicionais (`if`, `if-else`, `switch`)
+- Exibição de resultados
+- Organização e boas práticas no desenvolvimento de algoritmos
+
+### 🔥 Funcionalidades do Projeto
 
 O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma representando uma cidade brasileira com os seguintes atributos:
 
@@ -35,16 +43,20 @@ O programa simula o cadastro de **duas cartas do jogo Super Trunfo**, cada uma r
 
 ---
 
-### 🔥 Funcionalidades
+🕹️ Recursos Adicionais
+- Comparação Sem if/else:
+Comparação direta usando operadores lógicos. Retorna 1 (verdadeiro) se a carta 1 venceu, ou 0 (falso) se a carta 2 venceu.
 
-- Cadastro de duas cartas com informações completas
-- Cálculo automático de:
-  - Densidade Populacional
-  - PIB per Capita
-  - Super Poder
-- **Comparação das cartas de duas formas:**
-  - **Sem if/else:** usando operadores lógicos para comparar atributo por atributo, retornando 1 (verdadeiro, carta 1 venceu) ou 0 (falso, carta 2 venceu).
-  - **Com if/else:** comparação manual de um atributo específico (ex.: População) exibindo qual carta venceu ou se houve empate, com uma mensagem descritiva.
+- Comparação Com if/else:
+Comparação manual de um único atributo, mostrando o nome da cidade vencedora ou exibindo "Empate" em caso de igualdade.
+
+- Menu Interativo com switch:
+O jogador escolhe no terminal qual atributo será utilizado na comparação. As opções são:
+1. População
+2. Área
+3. PIB
+4. Pontos Turísticos
+5. Densidade Populacional (menor vence)
 
 ---
 
@@ -152,6 +164,18 @@ Número de Pontos Turísticos: 263
 Carta 2 cadastrada com sucesso!
 ================================================
 
+====================================
+
+Escolha o atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos Turísticos
+5 - Densidade Populacional
+Opção: 1
+
+====================================
+
 ============= CARTA 1 =============
 Estado: G
 Código: G01
@@ -193,6 +217,14 @@ Super Poder: Carta 1 venceu (0) / Carta 2 venceu (1)
 Carta 1 - Nanuque (MG): 35038
 Carta 2 - Florianópolis (SC): 537211
 Resultado: Carta 2 (Florianópolis) venceu!
+
+====== Comparação das Cartas ======
+========= Menu Interativo =========
+Comparando POPULAÇÃO
+Nanuque (MG): 35038 habitantes
+Florianopolis (SC): 537211 habitantes
+Vencedor: Florianopolis
+====================================
 ```
 
 ---
@@ -206,11 +238,15 @@ Este projeto permitiu reforçar os seguintes conceitos:
 - Uso de unsigned long int para valores grandes
 - Cálculo de densidade populacional e PIB per capita
 - Cálculo de Super Poder com soma de atributos diversos
-- Comparação de múltiplos atributos:
+- Comparação de múltiplos atributos e implementação de lógica de decisão:
   - Sem uso de estruturas condicionais
-  - Com uso de if e if-else
+  - Com operadores lógicos
+  - Com if/else
+  - Com menus usando switch
 - Manipulação de strings com ponteiros (const char*) para representar estados
-- Boas práticas de formatação e organização de código em C
+- Criação de sistemas de comparação robustos e flexíveis
+- Boas práticas de programação em C
+- Organização de código limpo, legível e escalável
 
 ---
 
