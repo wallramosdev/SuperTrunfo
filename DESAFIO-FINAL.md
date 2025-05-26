@@ -153,9 +153,7 @@ $$
 
 - Super Poder:
 
-$$
-Super\ Poder = População + Área + (PIB \times 1000000000) + Pontos\ Turísticos + PIB\ per\ Capita + Inverso\ da\ Densidade
-$$
+**Super Poder =** População + Área + (PIB × 1.000.000.000) + Pontos Turísticos + PIB per Capita + (1 ÷ Densidade)
 ​
 ---
 
