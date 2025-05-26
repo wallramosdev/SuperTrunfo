@@ -136,7 +136,7 @@ O projeto tem como principais objetivos:
 - Densidade Populacional:
 
 $$
-densidade = \frac{populacao}{area}
+Densidade = \frac{População}{Área}
 $$
 
 - PIB per Capita:​
