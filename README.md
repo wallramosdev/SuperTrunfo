@@ -94,6 +94,12 @@ gcc super_trunfo.c -o super_trunfo
 
 ---
 
+📄 Este repositório também contém um documento detalhado com a descrição completa do desafio final acadêmico, abordando os objetivos, modelagem, cálculos e regras do jogo.
+
+[👉 Acesse o Documento Completo do Desafio Final](./DESAFIO-FINAL.md)
+
+---
+
 ### 📷 Exemplo de Execução
 
 ```c
